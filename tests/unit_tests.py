@@ -27,9 +27,9 @@ class PyCalcUnitTests(unittest.TestCase):
         self.assertEqual(got, e)
 
   def test_sous(self):
-    left = [5]
-    right = [9]
-    expected = [-4]
+    left =  [5 ,9 ,5 ,-5 ,5 ,0 ,0 ,0 ,8 ,-8 ,-6 ]
+    right = [9 ,5 ,-9 ,5 ,5 ,7 ,-7 ,0 ,0 ,0,-6 ]
+    expected = [-4,4,14,0,0,-7,7,0,8,-8,0]
     for i in range(len(left)):
       l = left[i]
       r = right[i]
